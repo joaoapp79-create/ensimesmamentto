@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ensimesmamentto — Galeria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- fundo com sua imagem BG.png -->
+  <div class="bg-overlay"></div>
+
+  <!-- TELA PRINCIPAL -->
+  <div class="screen" id="main-screen">
+    <main class="card">
+      <!-- AVATAR -->
+      <div class="avatar-wrap">
+        <img src="assets/avatar.png.JPG" alt="avatar" class="avatar" />
+        <div class="avatar-ring"></div>
+      </div>
+
+      <!-- NOME -->
+      <h1 class="name">@ensimesmamentto<span class="dot"></span></h1>
+     
+      <!-- LINKS -->
+      <nav class="links">
+        <a href="https://www.instagram.com/ensimesmamentto" target="_blank" class="btn" id="ig">
+          Instagram
+        </a>
+
+        <a href="https://steamcommunity.com/id/joaozinhocaniveteapenas/" target="_blank" class="btn" id="sp">
+          Steam
+        </a>
+
+        <a href="https://letterboxd.com/alladi" target="_blank" class="btn" id="letterboxd">
+          Letterboxd
+        </a>
+
+        <!-- BOTÃO PARA ABRIR GALERIA DE ARTE -->
+        <div class="btn" id="photos-btn">
+          ARTE
+        </div>
+      </nav>
+
+      <!-- FOOTER -->
+      <footer class="small">Feito com ódio</footer>
+    </main>
+  </div>
+
+  <!-- TELA DA GALERIA DE ARTE -->
+  <div class="screen" id="feed-screen">
+    <div class="feed-container">
+      <div class="feed-header">
+        <h2 class="feed-title">Minha Arte</h2>
+        <button class="back-btn" id="back-btn">← Voltar</button>
+      </div>
+
+      <!-- TOOLBAR DA GALERIA -->
+      <div class="toolbar">
+        <div class="toolbar-info" id="image-count">0 obras</div>
+        <div class="toolbar-actions">
+          <button class="toolbar-btn" id="select-all">Selecionar Tudo</button>
+          <button class="toolbar-btn delete-all" id="delete-selected">Excluir Selecionadas</button>
+        </div>
+      </div>
+
+      <!-- GRID DA GALERIA -->
+      <div class="feed-grid" id="feed-grid">
+        <div class="feed-item empty">
+          Sua galeria está vazia<br>
+          <span style="font-size: 0.8rem; opacity: 0.7;">Clique em "Adicionar Arte" para começar</span>
+        </div>
+      </div>
+
+      <!-- UPLOAD -->
+      <div class="upload-section">
+        <div class="upload-btn-feed" id="upload-trigger-feed">
+          + Adicionar Arte
+        </div>
+        <input type="file" id="file-input" accept="image/*" multiple />
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE PREVIEW -->
+  <div class="image-preview" id="image-preview">
+    <div class="preview-content">
+      <img id="preview-image" src="" alt="Preview">
+      <button class="close-preview">×</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
