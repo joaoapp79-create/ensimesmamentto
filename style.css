@@ -29,7 +29,7 @@ body {
 .bg-overlay {
   position: fixed; 
   inset: 0;
-  background: url('assets/BG.png.jpg') center/cover;
+  background: url('assets/bg.png') center/cover;
   filter: contrast(0.9) saturate(0.85);
   opacity: 0.4;
   z-index: 0;
@@ -544,4 +544,5 @@ body {
   .feed-container {
     margin: 10px 0;
   }
+
 }
